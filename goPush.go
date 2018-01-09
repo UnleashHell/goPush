@@ -40,7 +40,7 @@ func main() {
 		RoutePrefix: "debug/pprof",
 	})
 	pushController := new(controllers.PushController)
-	pushGroup := r.Group("/pushApi")
+	pushGroup := r.Group("/api")
 	pushGroup.POST("/push", pushController.Push)
 	r.Run(":" + port)
 }
