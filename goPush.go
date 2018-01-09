@@ -1,12 +1,12 @@
 package main
 
 import (
+	"github.com/gin-contrib/pprof"
+	"github.com/gin-gonic/gin"
 	"goPush/controllers"
 	"goPush/lib/config"
 	"goPush/lib/log"
 	"goPush/lib/push"
-	"github.com/gin-gonic/gin"
-	"github.com/gin-contrib/pprof"
 )
 
 func main() {

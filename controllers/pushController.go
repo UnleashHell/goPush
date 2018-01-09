@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"goPush/lib/push"
 	"github.com/gin-gonic/gin"
+	"goPush/lib/push"
 	"net/http"
 )
 
@@ -26,7 +26,7 @@ var message = push.Message{}
 func (this *PushController) Push(g *gin.Context) {
 	var form params
 	if g.Bind(&form) == nil {
-		message := message.CreateMessage(form.Token,form.Alert,form.Sound,form.Badge)
+		message := message.CreateMessage(form.Token, form.Alert, form.Sound, form.Badge)
 		result := push.IosInstance.Push(message)
 		if result {
 			g.JSON(http.StatusOK, gin.H{"error": NO_ERROR, "msg": "success"})

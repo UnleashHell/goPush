@@ -15,7 +15,7 @@ func (this *Message) CreateMessage(token, alert, sound string, badge int) *Messa
 	if sound != "" {
 		model.Sound = sound
 	}
-	model.Badge = 1;
+	model.Badge = 1
 	if badge > 0 {
 		model.Badge = badge
 	}
