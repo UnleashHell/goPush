@@ -1,6 +1,6 @@
 ## GOLANG APNS2 HTTP服务
 
-基于apns2(http2)的http推送api服务,相比第一代apns传统socket方式,更加稳定,不会因为某个错误的device token而导致连接关闭,同时每条推送都能得到实时的结果反馈.
+基于apns2的http推送api,相比第一代apns传统socket方式,更加稳定,不会因为某个错误的device token而导致连接关闭,同时每条推送都能得到实时的结果反馈.
 
 ### 使用和配置
 
